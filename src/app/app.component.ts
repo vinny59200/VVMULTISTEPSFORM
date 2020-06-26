@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormDataService } from './services/form-data.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'VVMULTISTEPSFORM';
+
+  constructor(public formDataService : FormDataService) {
+  }
 }
